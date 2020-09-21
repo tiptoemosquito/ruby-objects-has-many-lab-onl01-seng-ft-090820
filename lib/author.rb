@@ -4,8 +4,8 @@ class Author
 
   @@all = []
 
-  def initialize(title)
-    @title = title
+  def initialize(name)
+    @name = name
     @@all << self
   end
 
@@ -21,9 +21,9 @@ class Author
     post.author = self
   end
 
-  def add_post_by_title(title)
-    post = Post.new(title)
-    song.artist = self
+  def add_post_by_title(name)
+    post = Post.new(name)
+    post.author = self
   end
 
   def self.post_count
