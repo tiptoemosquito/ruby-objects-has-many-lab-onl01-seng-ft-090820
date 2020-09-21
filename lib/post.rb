@@ -17,4 +17,6 @@ class Post
     author.name if author
   end
 
+  
+
 end
