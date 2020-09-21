@@ -1,5 +1,4 @@
 class Post
-
   attr_accessor :title, :author
 
   @@all = []
@@ -13,10 +12,7 @@ class Post
     @@all
   end
 
-  def author_name(author)
+  def author_name
     author.name if author
   end
-
-
-
 end
