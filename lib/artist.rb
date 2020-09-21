@@ -9,15 +9,16 @@ class Artist
     @@all << self
   end
 
-  def self.all?
-    @@all?
+  def self.all
+    @@all
   end
 
   def songs
-    songs.artist = self
+    
   end
 
   def add_song
+    songs.artist = self
   end
 
   def add_song_by_name
