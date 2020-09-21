@@ -13,10 +13,10 @@ class Post
     @@all
   end
 
-  def author_name
+  def author_name(author)
     author.name if author
   end
 
-  
+
 
 end
